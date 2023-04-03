@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "brain-crash-fix",
+  "version": "${version}",
+
+  "name": "Brain Crash Fix",
+  "description": "Prevent entity Brains from ticking while the entity is unloading.",
+  "authors": [
+    "jlortiz"
+  ],
+  "contact": {
+    "homepage": "https://github.com/jlortiz0",
+    "sources": "https://github.com/jlortiz0/brain-crash-fix"
+  },
+
+  "license": "MIT",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.jlortiz.BrainCrashFix.BrainCrashFix"
+    ]
+  },
+  "mixins": [
+    "brain-crash-fix.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  }
+}
